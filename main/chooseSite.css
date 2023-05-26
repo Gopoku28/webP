@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+:root{
+    --fon-fam:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* main container */
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+
+.miniContainer{
+    height: 100vh;
+    width: 100%;
+    transition: .2s ease-in-out;
+    background: black  center ;
+}
+
+.board{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin-left: .5rem;
+    display: grid;
+    transition: .5s ease-in-out;
+    grid-template-columns: 1fr 3.5fr;
+
+}
+
+/* contact list */
+.Lists{
+    width: 32rem;
+    height: 100%;
+    overflow: auto;
+    color: black;
+    text-align: center;
+    transition: .5s ease-in-out;
+    padding-bottom: 3rem;
+}
+
+.welcome {
+    text-align: center;
+    list-style: none;
+    line-height: 3rem;
+    margin-top: 2rem;
+}
+.welcome header{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+}
+.welcome .def{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.def .sp1,.sp2,.sp3,.sp4{
+    font-size: 5rem;
+}
+.welcome header span{
+    text-shadow: 0 0 5px,
+                0 0 25px,
+                0 0 35px;
+}
+.underlined{
+    width: 75%;
+    margin-left: 10rem;
+    border: .5rem dashed;
+    border-radius: 3px;
+    margin-top: 2rem;
+}
+.welcome h2{
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Lists:hover,.active:hover{
+    border-radius: 30px;
+    border: .5rem solid rgba(0, 0, 255, 0.226);
+}
+.Lists .u-profile{
+    width: 95%;
+    border-radius: 30px;
+    margin-left: .5rem;
+    margin-top: 2rem;
+    height: 60%;
+    background: black
+}
+
+.Lists .details{
+    width: 100%;
+    height: 55%;
+    margin-top: 2rem;
+    text-align: center;
+}
+.group{
+    line-height: 2.5rem;
+}
+.group hr{
+    width: 80%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.group h1{
+    font-size: 3rem;
+    transition: .5s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+.group h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logger{
+    line-height: 2.5rem;
+    font-family: var(--fon-fam);
+}
+.logger h2{
+    margin-top: 1rem;
+}
+
+.group #author{
+    font-size: 2rem;
+}
+/* is active */
+.active{
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.SelectedHeader{
+    width: 100%;
+    height: 10rem;
+    box-shadow: 5px 2px 3rem;
+    position: fixed;
+}
+.SelectedHeader{
+    border-top-left-radius: 30px;
+}
+.main{
+    overflow: auto;
+    width: 100%;
+    height: calc(100% - 11rem);
+    margin-top: 11rem;
+}
+
+.sub-main:hover{
+    border: .5rem solid rgba(0, 0, 255, 0.325);
+}
+
+.list1,.list2{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+
+.list1 h3,.list2 h3{
+    font-size: 2rem;
+}
+
+.list1 a,.list2 a{
+    color: black;
+    text-decoration: none;
+}
+.sub-main{
+    width: 30rem;
+    height: 25rem;
+    border-radius: 50px;
+    padding-top: 20rem;
+    background: white;
+    box-shadow: 5px 2px 3rem;
+}
+
